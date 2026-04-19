@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cps2n2dhjxfhp"]
+
+[ext_resource type="Script" uid="uid://btbawstrtvolp" path="res://addons/mvnf/scripts/editor/choice.gd" id="1_e2xqn"]
+
+[node name="choice" type="HBoxContainer" unique_id=1242550911 node_paths=PackedStringArray("remove_button", "choice_edit")]
+offset_right = 86.0
+offset_bottom = 32.0
+script = ExtResource("1_e2xqn")
+remove_button = NodePath("Button")
+choice_edit = NodePath("LineEdit")
+
+[node name="Button" type="Button" parent="." unique_id=1789673385]
+layout_mode = 2
+size_flags_vertical = 4
+text = "-"
+icon_alignment = 1
+expand_icon = true
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1525775334]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "choice..."

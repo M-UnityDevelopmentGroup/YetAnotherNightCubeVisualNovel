@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://cbyqrqjksv1iq"]
+
+[ext_resource type="Texture2D" uid="uid://iqdyawt4gtkx" path="res://icon.svg" id="2_jd4kd"]
+[ext_resource type="Script" uid="uid://m6207tfq7dfn" path="res://addons/mvnf/scripts/dialog.gd" id="3_gefd4"]
+[ext_resource type="PackedScene" uid="uid://cm7bx1tr6lkh4" path="res://addons/mvnf/prefabs/choice_button.tscn" id="4_ckhy2"]
+[ext_resource type="JSON" path="res://addons/mvnf/examples/example.json" id="4_eu40k"]
+
+[sub_resource type="Theme" id="Theme_nnqer"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_fj5cn"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="Shortcut" id="Shortcut_iy58a"]
+events = [SubResource("InputEventKey_fj5cn")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_6a6wx"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="Shortcut" id="Shortcut_sky72"]
+events = [SubResource("InputEventKey_6a6wx")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ee4bf"]
+keycode = 32
+
+[sub_resource type="InputEventKey" id="InputEventKey_0ytqx"]
+device = -1
+keycode = 4194321
+
+[sub_resource type="Shortcut" id="Shortcut_kbped"]
+events = [SubResource("InputEventKey_ee4bf"), SubResource("InputEventKey_0ytqx")]
+
+[node name="Control" type="Control" unique_id=662968753]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="Background" type="TextureRect" parent="." unique_id=1170271161]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Character" type="TextureRect" parent="." unique_id=831962157]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jd4kd")
+stretch_mode = 5
+
+[node name="Dialog" type="Panel" parent="." unique_id=62147116 node_paths=PackedStringArray("NextButton", "BackButton", "ExitButton", "ChoicePanel", "ChoiceContainer", "LabelPanel", "DialogPanel", "DialogImage", "BackgroundImage", "text", "character_name_text", "background_stream", "foreground_stream")]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.0
+offset_top = -324.0
+offset_right = -26.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("3_gefd4")
+NextButton = NodePath("HBoxContainer/Next")
+BackButton = NodePath("HBoxContainer/Back")
+ExitButton = NodePath("HBoxContainer/Exit")
+ChoiceButton = ExtResource("4_ckhy2")
+ChoicePanel = NodePath("../Choices")
+ChoiceContainer = NodePath("../Choices/VBoxContainer")
+LabelPanel = NodePath("Panel")
+DialogPanel = NodePath(".")
+DialogImage = NodePath("../Character")
+BackgroundImage = NodePath("../Background")
+text = NodePath("Text")
+character_name_text = NodePath("Panel/Name")
+text_speed = 0.01
+background_stream = NodePath("../Foreground/Background")
+foreground_stream = NodePath("../Foreground")
+StoryJSON = ExtResource("4_eu40k")
+
+[node name="Text" type="RichTextLabel" parent="Dialog" unique_id=245291852]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 24.0
+offset_right = -34.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "dddddddddddddddd"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Dialog" unique_id=142887456]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = -70.0
+offset_right = -34.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(525, 17)
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="Exit" type="Button" parent="Dialog/HBoxContainer" unique_id=1252088162]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_nnqer")
+shortcut = SubResource("Shortcut_iy58a")
+text = "Exit"
+
+[node name="Save" type="Button" parent="Dialog/HBoxContainer" unique_id=349148794]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_nnqer")
+text = "Save"
+
+[node name="Back" type="Button" parent="Dialog/HBoxContainer" unique_id=1987467231]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_nnqer")
+shortcut = SubResource("Shortcut_sky72")
+text = "Back"
+
+[node name="Next" type="Button" parent="Dialog/HBoxContainer" unique_id=294354226]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_nnqer")
+shortcut = SubResource("Shortcut_kbped")
+text = "Next"
+
+[node name="Panel" type="Panel" parent="Dialog" unique_id=1557742818]
+layout_mode = 1
+offset_top = -40.0
+offset_right = 200.0
+
+[node name="Name" type="RichTextLabel" parent="Dialog/Panel" unique_id=20155423]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.5
+offset_top = 5.0
+offset_right = -12.5
+offset_bottom = -4.9999924
+grow_horizontal = 2
+grow_vertical = 2
+text = "Godot"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Choices" type="Panel" parent="." unique_id=696739985]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.0
+offset_top = 26.0
+offset_right = -26.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Choices" unique_id=1764624832]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.0
+offset_top = 26.0
+offset_right = -26.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="Foreground" type="AudioStreamPlayer" parent="." unique_id=1866255598]
+volume_db = -4.0
+
+[node name="Background" type="AudioStreamPlayer" parent="Foreground" unique_id=508687329]
+volume_db = -16.0

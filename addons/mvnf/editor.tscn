@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://bx465n27xufqf"]
+
+[ext_resource type="Script" uid="uid://dof7ka1a7mg07" path="res://addons/mvnf/scripts/editor/editor.gd" id="1_orbl0"]
+[ext_resource type="PackedScene" uid="uid://d1tybt50k68aq" path="res://addons/mvnf/prefabs/graph_node.tscn" id="2_7guw3"]
+
+[sub_resource type="Theme" id="Theme_orbl0"]
+
+[node name="Control" type="Control" unique_id=499951051 node_paths=PackedStringArray("character_tree", "background_tree", "character_edit", "background_edit", "graph", "story_path_label", "story_actions_popup", "create_actions_popup", "character_button", "background_button", "file_dialog")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_orbl0")
+character_tree = NodePath("HSplitContainer/TabContainer/Characters/VBoxContainer/Tree")
+background_tree = NodePath("HSplitContainer/TabContainer/Backgrounds/VBoxContainer/Tree")
+character_edit = NodePath("HSplitContainer/TabContainer/Characters/VBoxContainer/CodeEdit")
+background_edit = NodePath("HSplitContainer/TabContainer/Backgrounds/VBoxContainer/CodeEdit")
+graph = NodePath("HSplitContainer/GraphEdit")
+story_path_label = NodePath("Panel/HBoxContainer/Label")
+node_template = ExtResource("2_7guw3")
+story_actions_popup = NodePath("Panel/HBoxContainer/MenuBar/StoryActions")
+create_actions_popup = NodePath("Panel/HBoxContainer/Create")
+character_button = NodePath("HSplitContainer/TabContainer/Characters/VBoxContainer/CharacterUpdate")
+background_button = NodePath("HSplitContainer/TabContainer/Backgrounds/VBoxContainer/BackgroundUpdate")
+file_dialog = NodePath("FileDialog")
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=852280624]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+display_mode = 1
+filters = PackedStringArray("*.json;JSON")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="." unique_id=879801920]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offsets = PackedInt32Array(-161)
+split_offset = -161
+
+[node name="GraphEdit" type="GraphEdit" parent="HSplitContainer" unique_id=50568832]
+layout_mode = 2
+size_flags_horizontal = 3
+grid_pattern = 1
+right_disconnects = true
+connection_lines_curvature = 0.25
+connection_lines_thickness = 2.0
+zoom_max = 4.0
+minimap_enabled = false
+show_zoom_label = true
+show_grid_buttons = false
+show_minimap_button = false
+
+[node name="TabContainer" type="TabContainer" parent="HSplitContainer" unique_id=609807139]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+current_tab = 0
+
+[node name="Characters" type="Panel" parent="HSplitContainer/TabContainer" unique_id=1423368008]
+layout_mode = 2
+theme = SubResource("Theme_orbl0")
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/TabContainer/Characters" unique_id=1087700646]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterUpdate" type="Button" parent="HSplitContainer/TabContainer/Characters/VBoxContainer" unique_id=339944062]
+layout_mode = 2
+text = "Update"
+
+[node name="Tree" type="Tree" parent="HSplitContainer/TabContainer/Characters/VBoxContainer" unique_id=2060893578]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+hide_root = true
+
+[node name="CodeEdit" type="CodeEdit" parent="HSplitContainer/TabContainer/Characters/VBoxContainer" unique_id=1474744673]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Backgrounds" type="Panel" parent="HSplitContainer/TabContainer" unique_id=1551690562]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/TabContainer/Backgrounds" unique_id=1330886431]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundUpdate" type="Button" parent="HSplitContainer/TabContainer/Backgrounds/VBoxContainer" unique_id=536955121]
+layout_mode = 2
+text = "Update"
+
+[node name="Tree" type="Tree" parent="HSplitContainer/TabContainer/Backgrounds/VBoxContainer" unique_id=1910603532]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+hide_root = true
+
+[node name="CodeEdit" type="CodeEdit" parent="HSplitContainer/TabContainer/Backgrounds/VBoxContainer" unique_id=1261957432]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="." unique_id=513760714]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -3.0
+offset_bottom = 29.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=1148013958]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBar" type="MenuBar" parent="Panel/HBoxContainer" unique_id=1114572388]
+layout_mode = 2
+flat = true
+prefer_global_menu = false
+
+[node name="StoryActions" type="PopupMenu" parent="Panel/HBoxContainer/MenuBar" unique_id=734710699]
+oversampling_override = 1.0
+title = "Story"
+size = Vector2i(157, 120)
+item_count = 5
+item_0/text = "New Story"
+item_0/id = 0
+item_1/text = "Open Story..."
+item_1/id = 1
+item_2/id = 7
+item_2/separator = true
+item_3/text = "Save Story"
+item_3/id = 2
+item_3/disabled = true
+item_4/text = "Save Story As..."
+item_4/id = 3
+item_4/disabled = true
+
+[node name="Label" type="RichTextLabel" parent="Panel/HBoxContainer" unique_id=1888465524]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 2
+text = "No story"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Create" type="MenuBar" parent="Panel/HBoxContainer" unique_id=1617308216]
+visible = false
+layout_mode = 2
+flat = true
+prefer_global_menu = false
+
+[node name="PopupMenu" type="PopupMenu" parent="Panel/HBoxContainer/Create" unique_id=1749874465]
+oversampling_override = 1.0
+title = "Create..."
+size = Vector2i(133, 100)
+item_count = 3
+item_0/text = "Node"
+item_0/id = 0
+item_1/text = "Character"
+item_1/id = 1
+item_1/disabled = true
+item_2/text = "Background"
+item_2/id = 2
+item_2/disabled = true
+
+[connection signal="id_pressed" from="Panel/HBoxContainer/MenuBar/StoryActions" to="." method="_manage_stories"]
+[connection signal="id_pressed" from="Panel/HBoxContainer/Create/PopupMenu" to="." method="_manage_nodes"]
