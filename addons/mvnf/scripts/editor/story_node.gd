@@ -44,6 +44,10 @@ func _ready() -> void:
 	text_edit.text_changed.connect(_update_text)
 	node_name_option.item_selected.connect(_change_name)
 	node_background_option.item_selected.connect(_change_background)
+	node_sprite_option.item_selected.connect(_change_sprite)
+	node_background_type_option.item_selected.connect(_change_background_type)
+	node_character_sound_option.item_selected.connect(_change_sound)
+	node_background_sound_option.item_selected.connect(_change_background_sound)
 	if not choice_button.pressed.is_connected(_create_choice):
 		choice_button.pressed.connect(_create_choice)
 	_change_type(0)
@@ -62,6 +66,18 @@ func _update_text() -> void:
 func _change_name(index: int) -> void:
 	node_data.name = current_editor.character_enum.find_key(index)
 	_update_name()
+
+func _change_sprite(index: int) -> void:
+	node_data.sprite = current_editor.sprite_enum.get(node_data.name).find_key(index)
+
+func _change_sound(index: int) -> void:
+	node_data.sound = current_editor.character_sound_enum.get(node_data.name).find_key(index)
+	
+func _change_background_type(index: int) -> void:
+	node_data.background_type = current_editor.background_type_enum.get(node_data.background).find_key(index)
+
+func _change_background_sound(index: int) -> void:
+	node_data.background_sound = current_editor.background_sound_enum.get(node_data.background).find_key(index)
 
 func _update_name() -> void:
 	if not current_editor.character_enum.has(node_data.name) and not current_editor.character_enum.is_empty():
