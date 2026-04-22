@@ -153,7 +153,7 @@ func _manage_stories(id: int) -> void:
 		story_actions.SAVE_STORY:
 			_update_story()
 			file = FileAccess.open(story_path, FileAccess.WRITE)
-			file.store_string(JSON.stringify(current_story.duplicate(true),"\t"))
+			file.store_string(JSON.stringify(current_story.duplicate(true),"\t", false))
 			file.close()
 		story_actions.SAVE_STORY_AS:
 			_update_story()
@@ -179,7 +179,7 @@ func _process_file(path: String) -> void:
 		story_actions.NEW_STORY:
 			if not FileAccess.file_exists(path):
 				file = FileAccess.open(path, FileAccess.WRITE)
-				file.store_string(JSON.stringify(story_template,"\t"))
+				file.store_string(JSON.stringify(story_template, "\t", false))
 				current_story = story_template.duplicate(true)
 				story_path = path
 				story_path_label.text = story_path
@@ -207,7 +207,7 @@ func _process_file(path: String) -> void:
 			return
 		story_actions.SAVE_STORY_AS:
 			file = FileAccess.open(path, FileAccess.WRITE)
-			file.store_string(JSON.stringify(current_story.duplicate(true),"\t"))
+			file.store_string(JSON.stringify(current_story.duplicate(true),"\t", false))
 			file.close()
 			story_path = path
 			story_path_label.text = story_path
@@ -220,10 +220,10 @@ func _open_story() -> void:
 		i.queue_free()
 	nodes.clear()
 	if current_story.has("backgrounds"):
-		background_edit.text = JSON.stringify(current_story.backgrounds, "\t")
+		background_edit.text = JSON.stringify(current_story.backgrounds, "\t", false)
 		_update_enums(current_story.backgrounds, background_enum, "sprites", background_type_enum, "sounds", background_sound_enum)
 	if current_story.has("characters"):
-		character_edit.text = JSON.stringify(current_story.characters, "\t")
+		character_edit.text = JSON.stringify(current_story.characters, "\t", false)
 		_update_enums(current_story.characters, character_enum, "sprites", sprite_enum, "sounds", character_sound_enum)
 	if (current_story.has("phrases")):
 		for i in current_story.phrases:
@@ -249,6 +249,7 @@ func _open_story() -> void:
 func _update_enums(first_dict: Dictionary, first_enum: Dictionary, key: String, second_enum: Dictionary, second_key: String, third_enum: Dictionary) -> void:
 	first_enum.clear()
 	second_enum.clear()
+	third_enum.clear()
 	_list_resourses_to_enum(first_dict, first_enum)
 	for i in first_dict:
 		if first_dict.get(i).has(key):
