@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://cbyqrqjksv1iq"]
 
+[ext_resource type="FontFile" uid="uid://k0jop72t2cs6" path="res://Glina Script.ttf" id="1_nnqer"]
 [ext_resource type="Texture2D" uid="uid://iqdyawt4gtkx" path="res://icon.svg" id="2_jd4kd"]
 [ext_resource type="Script" uid="uid://m6207tfq7dfn" path="res://addons/mvnf/scripts/dialog.gd" id="3_gefd4"]
+[ext_resource type="JSON" path="res://story.json" id="4_bjg8n"]
 [ext_resource type="PackedScene" uid="uid://cm7bx1tr6lkh4" path="res://addons/mvnf/prefabs/choice_button.tscn" id="4_ckhy2"]
-[ext_resource type="JSON" path="res://addons/mvnf/examples/example.json" id="4_eu40k"]
+[ext_resource type="Script" uid="uid://leehmvr1x5lu" path="res://addons/AutoSizeText/ui/AutoSizeRichTextLabel.gd" id="5_eu40k"]
+
+[sub_resource type="Theme" id="Theme_kb14d"]
+default_font = ExtResource("1_nnqer")
 
 [sub_resource type="Theme" id="Theme_nnqer"]
 
@@ -40,6 +45,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_kb14d")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1170271161]
 layout_mode = 1
@@ -60,13 +66,14 @@ texture = ExtResource("2_jd4kd")
 stretch_mode = 5
 
 [node name="Dialog" type="Panel" parent="." unique_id=62147116 node_paths=PackedStringArray("NextButton", "BackButton", "ExitButton", "ChoicePanel", "ChoiceContainer", "LabelPanel", "DialogPanel", "DialogImage", "BackgroundImage", "text", "character_name_text", "background_stream", "foreground_stream")]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 26.0
+offset_left = 28.0
 offset_top = -324.0
-offset_right = -26.0
+offset_right = -24.0
 offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -86,9 +93,9 @@ character_name_text = NodePath("Panel/Name")
 text_speed = 0.01
 background_stream = NodePath("../Foreground/Background")
 foreground_stream = NodePath("../Foreground")
-StoryJSON = ExtResource("4_eu40k")
+StoryJSON = ExtResource("4_bjg8n")
 
-[node name="Text" type="RichTextLabel" parent="Dialog" unique_id=245291852]
+[node name="Text" type="RichTextLabel" parent="Dialog" unique_id=1765775389]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -99,8 +106,16 @@ offset_right = -34.0
 offset_bottom = -76.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 128
+theme_override_font_sizes/bold_font_size = 128
+theme_override_font_sizes/bold_italics_font_size = 128
+theme_override_font_sizes/italics_font_size = 128
+theme_override_font_sizes/mono_font_size = 128
 bbcode_enabled = true
-text = "dddddddddddddddd"
+script = ExtResource("5_eu40k")
+watch_text_change = true
+max_font_size = 128
+metadata/_custom_type_script = "uid://leehmvr1x5lu"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Dialog" unique_id=142887456]
 layout_mode = 1
@@ -123,27 +138,27 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_nnqer")
 shortcut = SubResource("Shortcut_iy58a")
-text = "Exit"
+text = "Выйти"
 
 [node name="Save" type="Button" parent="Dialog/HBoxContainer" unique_id=349148794]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_nnqer")
-text = "Save"
+text = "Сохранить"
 
 [node name="Back" type="Button" parent="Dialog/HBoxContainer" unique_id=1987467231]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_nnqer")
 shortcut = SubResource("Shortcut_sky72")
-text = "Back"
+text = "Назад"
 
 [node name="Next" type="Button" parent="Dialog/HBoxContainer" unique_id=294354226]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_nnqer")
 shortcut = SubResource("Shortcut_kbped")
-text = "Next"
+text = "Вперёд"
 
 [node name="Panel" type="Panel" parent="Dialog" unique_id=1557742818]
 layout_mode = 1
@@ -161,7 +176,6 @@ offset_right = -12.5
 offset_bottom = -4.9999924
 grow_horizontal = 2
 grow_vertical = 2
-text = "Godot"
 horizontal_alignment = 1
 vertical_alignment = 1
 

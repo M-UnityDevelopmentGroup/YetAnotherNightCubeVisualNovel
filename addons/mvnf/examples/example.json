@@ -38,17 +38,23 @@
 
 			},
 			"editor_transform": {
-				"position_x": 0,
-				"position_y": 0,
+				"position_x": 0.0,
+				"position_y": 0.0,
 				"size_x": 360.0,
 				"size_y": 779.999938964844
 			},
 			"name": "default",
-			"next": 1,
+			"next": 1.0,
 			"sound": "default",
 			"sprite": "default",
 			"text": "This is an example story",
-			"type": "text"
+			"type": "text",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
 		},
 		{
 			"background": "default",
@@ -64,20 +70,26 @@
 				"size_y": 839.999938964844
 			},
 			"name": "default",
-			"next": 2,
+			"next": 2.0,
 			"sound": "default",
 			"sprite": "default",
 			"text": "You can choose something",
-			"type": "text"
+			"type": "text",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
 		},
 		{
 			"background": "default",
 			"background_sound": "default",
 			"background_type": "default",
 			"choices": {
-				"Choice": 1,
-				"Different": 4,
-				"Something": 3
+				"Choice": 1.0,
+				"Different": 4.0,
+				"Something": 3.0
 			},
 			"editor_transform": {
 				"position_x": 1240.0,
@@ -89,7 +101,13 @@
 			"sound": "default",
 			"sprite": "default",
 			"text": "",
-			"type": "choice"
+			"type": "choice",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
 		},
 		{
 			"background": "default",
@@ -105,10 +123,17 @@
 				"size_y": 720.0
 			},
 			"name": "default",
+			"next": 5.0,
 			"sound": "default",
 			"sprite": "default",
 			"text": "Something",
-			"type": "text"
+			"type": "text",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
 		},
 		{
 			"background": "default",
@@ -127,7 +152,41 @@
 			"sound": "default",
 			"sprite": "default",
 			"text": "Nothing",
-			"type": "text"
+			"type": "text",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
+		},
+		{
+			"background": "default",
+			"background_sound": "default",
+			"background_type": "default",
+			"choices": {
+				"Choice3": 0.0,
+				"Is": 0.0,
+				"It?": 3.0,
+				"What": 4.0
+			},
+			"editor_transform": {
+				"position_x": 3020.0,
+				"position_y": -360.0,
+				"size_x": 320.0,
+				"size_y": 640.0
+			},
+			"name": "default",
+			"sound": "default",
+			"sprite": "default",
+			"text": "",
+			"type": "choice",
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
 		}
 	]
 }

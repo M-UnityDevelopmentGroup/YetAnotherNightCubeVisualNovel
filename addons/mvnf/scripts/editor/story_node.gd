@@ -9,6 +9,8 @@ extends GraphNode
 @export var node_background_option: OptionButton
 @export var node_background_type_option: OptionButton
 @export var node_background_sound_option: OptionButton
+@export var node_position: Transform
+@export var node_scale: Transform
 @export var choice_button: Button
 @export var choice_label: Label
 @export var text_label: Label
@@ -17,11 +19,17 @@ extends GraphNode
 @export var choice_template: PackedScene
 @export var choice_slot_offset: int
 @export var node_popup: PopupMenu
-@export var default_transform: Dictionary[String, int] = {
+var default_editor_transform: Dictionary[String, float] = {
 	"position_x": 0,
 	"position_y": 0,
 	"size_x": 300,
-	"size_y": 500
+	"size_y": 600
+}
+var default_transform: Dictionary[String, float] = {
+	"position_x": 0,
+	"position_y": 0,
+	"scale_x": 1,
+	"scale_y": 1
 }
 var current_editor: StoryEditor
 var current_graph_edit: GraphEdit
@@ -48,6 +56,7 @@ func _ready() -> void:
 	node_background_type_option.item_selected.connect(_change_background_type)
 	node_character_sound_option.item_selected.connect(_change_sound)
 	node_background_sound_option.item_selected.connect(_change_background_sound)
+
 	if not choice_button.pressed.is_connected(_create_choice):
 		choice_button.pressed.connect(_create_choice)
 	_change_type(0)
@@ -79,14 +88,22 @@ func _change_background_type(index: int) -> void:
 func _change_background_sound(index: int) -> void:
 	node_data.background_sound = current_editor.background_sound_enum.get(node_data.background).find_key(index)
 
+func _change_position(value: Dictionary[String, float]) -> void:
+	for i in value:
+		node_data.transform.set("position_"+i, value[i])
+
+func _change_scale(value: Dictionary[String, float]) -> void:
+	for i in value:
+		node_data.transform.set("scale_"+i, value[i])
+
 func _update_name() -> void:
 	if not current_editor.character_enum.has(node_data.name) and not current_editor.character_enum.is_empty():
 		node_data.name = current_editor.character_enum.keys()[0]
-	set_enum(current_editor.sprite_enum.get(node_data.name), node_sprite_option, node_data.get_or_add("sprite",""))
-	set_enum(current_editor.character_sound_enum.get(node_data.name), node_character_sound_option, node_data.get_or_add("sound",""))
+	set_enum(current_editor.sprite_enum.get(node_data.name), node_sprite_option, node_data.get_or_add("sprite",""), "sprite")
+	set_enum(current_editor.character_sound_enum.get(node_data.name), node_character_sound_option, node_data.get_or_add("sound",""), "sound")
 
 func _update_name_enum() -> void:
-	set_enum(current_editor.character_enum, node_name_option, node_data.get_or_add("name",""))
+	set_enum(current_editor.character_enum, node_name_option, node_data.get_or_add("name",""), "name")
 	
 func _change_background(index: int) -> void:
 	node_data.background = current_editor.background_enum.find_key(index)
@@ -95,11 +112,11 @@ func _change_background(index: int) -> void:
 func _update_background() -> void:
 	if not current_editor.background_enum.has(node_data.background) and not current_editor.background_enum.is_empty():
 		node_data.background = current_editor.background_enum.keys()[0]
-	set_enum(current_editor.background_type_enum.get(node_data.background), node_background_type_option, node_data.get_or_add("background_type",""))
-	set_enum(current_editor.background_sound_enum.get(node_data.background), node_background_sound_option, node_data.get_or_add("background_sound",""))
+	set_enum(current_editor.background_type_enum.get(node_data.background), node_background_type_option, node_data.get_or_add("background_type",""), "background_type")
+	set_enum(current_editor.background_sound_enum.get(node_data.background), node_background_sound_option, node_data.get_or_add("background_sound",""), "background_sound")
 
 func _update_background_enum() -> void:
-	set_enum(current_editor.background_enum, node_background_option, node_data.get_or_add("background",""))
+	set_enum(current_editor.background_enum, node_background_option, node_data.get_or_add("background",""), "background")
 
 func set_node_properties(phrase: Dictionary, id: int, edit: GraphEdit, editor: StoryEditor) -> bool:
 	current_graph_edit = edit
@@ -117,12 +134,19 @@ func set_node_properties(phrase: Dictionary, id: int, edit: GraphEdit, editor: S
 			type_button.selected = 1
 	if node_data.has("choices"):
 		for i in node_data.choices:
-			_create_choice(i, node_data.choices.get(i, 0), false)
-	node_data.get_or_add("editor_transform", default_transform)
+			_create_choice(i, int(node_data.choices.get(i, 0)), false)
+	node_data.get_or_add("editor_transform", default_editor_transform)
 	position_offset.x = node_data.editor_transform.position_x
 	position_offset.y = node_data.editor_transform.position_y
 	size.x = node_data.editor_transform.size_x
 	size.y = node_data.editor_transform.size_y
+	node_data.get_or_add("transform", default_transform)
+	node_position.x.value = node_data.transform.position_x
+	node_position.y.value = node_data.transform.position_y
+	node_scale.x.value = node_data.transform.scale_x
+	node_scale.y.value = node_data.transform.scale_y
+	node_scale.transform_changed.connect(_change_scale)
+	node_position.transform_changed.connect(_change_position)
 	_update_name_enum()
 	_update_background_enum()
 	_update_background()
@@ -130,12 +154,13 @@ func set_node_properties(phrase: Dictionary, id: int, edit: GraphEdit, editor: S
 	node_text_edit.text = node_data.text
 	return true
 
-func set_enum(current_enum: Dictionary[String, int], option: OptionButton, value: String) -> void:
+func set_enum(current_enum: Dictionary[String, int], option: OptionButton, value: String, key: String) -> void:
 	option.clear()
 	for i in current_enum:
 		option.add_item(i)
 	if not value in current_enum and not current_enum.is_empty():
 		value = current_enum.keys()[0]
+		node_data.set(key, current_enum.keys()[0])
 		option.selected = 0
 	elif current_enum.is_empty():
 		value = ""
@@ -185,7 +210,7 @@ func _create_choice(text: String = "Choice", path: int = 0, add_to_dict: bool = 
 	if node_data.choices.has(text) and add_to_dict:
 		text += str(node_data.choices.size())
 	if add_to_dict:
-		node_data.choices.set(text,path)
+		node_data.choices.set(text,int(path))
 	temp_choice = choice_template.instantiate()
 	temp_choice.choice_edit.text = text
 	temp_choice.temp_name = text
@@ -201,7 +226,10 @@ func _remove_choice(choice: Choice) -> void:
 	size.y -= temp_choice_size_y
 	node_data.choices.erase(choice.choice_edit.text)
 	choice.queue_free()
+	set_slot_enabled_right(choice_templates.size()+choice_slot_offset, false)
+	
 	choice_templates.erase(choice)
+	
 
 func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:

@@ -19,17 +19,53 @@ signal proceed(type: String)
 @export var background_stream: AudioStreamPlayer
 @export var foreground_stream: AudioStreamPlayer
 @export var StoryJSON: JSON
+@export var fallback_sprite: Image
+@export var fallback_background: Image
+@export var fallback_sfx: AudioStream
+@export var fallback_music: AudioStream
 var current_stream: AudioStream
 var current_text_speed: float 
 var current_phrases: Array[Dictionary]
 var current_index: int
+var current_resources: Dictionary
 var history: Array[int]
 var phrase: Dictionary
 var running := true
 var is_busy: bool
 var temp_choice_button: Button
 var font_types = ["normal_font_size", "bold_font_size", "italics_font_size", "bold_italics_font_size", "mono_font_size"]
-
+var default_resources: Dictionary = {
+	"characters": {
+		"default": {
+			"sprites": {
+				"default": ""
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": ""
+			}
+		}
+	},
+	"backgrounds": {
+		"default": {
+			"sprites": {
+				"default": ""
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": ""
+			},
+			"settings": {
+				"expand_mode": 0,
+				"stretch_mode": 0
+			}
+		}
+	}
+}
 func _ready() -> void:
 	NextButton.pressed.connect(next)
 	BackButton.pressed.connect(back)
@@ -52,6 +88,7 @@ func show_phrase() -> bool:
 	return true
 
 func handle_choice() -> bool:
+	NextButton.disabled = true
 	character_name_text.text = phrase.name
 	ChoiceContainer.mouse_filter = Control.MOUSE_FILTER_STOP
 	await create_tween().tween_property(DialogPanel, "modulate:a", 0, 0.25).finished
@@ -65,6 +102,9 @@ func handle_choice() -> bool:
 	await create_tween().tween_property(ChoicePanel, "modulate:a", 1, 0.25).finished
 	return true
 
+#func handle_resources() -> void:
+	#current_resources.get_or_add("sprite", phrase.get("sprite", ))
+
 func handle_phrase() -> bool:
 	character_name_text.text = phrase.name
 	text.visible_characters = 0
@@ -73,6 +113,11 @@ func handle_phrase() -> bool:
 	if StoryJSON.data.characters.has(phrase.name):
 		DialogImage.texture = load(StoryJSON.data.characters.get(phrase.name).sprites.get(phrase.sprite))
 		LabelPanel.self_modulate = StoryJSON.data.characters.get(phrase.name).colors.main
+		if phrase.has("transform"):
+			DialogImage.position.x = phrase.transform.get("position_x", 0)
+			DialogImage.position.y = phrase.transform.get("position_y", 0)
+			DialogImage.scale.x = phrase.transform.get("scale_x", 0)
+			DialogImage.scale.y = phrase.transform.get("scale_y", 0)
 		if StoryJSON.data.characters.get(phrase.name).sounds.has(phrase.sound):
 			foreground_stream.stream = load(StoryJSON.data.characters.get(phrase.name).sounds.get(phrase.sound))
 	phrase.get_or_add("background", "default")
@@ -126,6 +171,7 @@ func next(next_index: int = -1) -> void:
 		current_index = next_index
 		create_tween().tween_property(ChoicePanel, "modulate:a", 0, 0.25)
 		await create_tween().tween_property(DialogPanel, "modulate:a", 1, 0.25).finished
+		NextButton.disabled = false
 		for choice in ChoiceContainer.get_children():
 			choice.queue_free()
 	elif phrase.has("next"):

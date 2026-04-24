@@ -75,12 +75,6 @@ var template: Dictionary = {
 	"background_sound": "default",
 	"text": "",
 	"choices": {
-	},
-	"editor_transform": {
-		"position_x": 0,
-		"position_y": 0,
-		"size_x": 300,
-		"size_y": 500
 	}
 }
 #var background: Dictionary = {

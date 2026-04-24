@@ -1,0 +1,1455 @@
+{
+	"characters": {
+		"Трики": {
+			"sprites": {
+				"normal": "res://sprites/characters/triki/triki.png",
+				"earthy": "res://sprites/characters/triki/triki_irl.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Марен": {
+			"sprites": {
+				"normal": "res://sprites/characters/maren/maren.png",
+				"earthy": "res://sprites/characters/maren/maren_irl.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Марта": {
+			"sprites": {
+				"normal": "res://sprites/characters/marta/marta.png",
+				"earthy": "res://sprites/characters/marta/marta_irl.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Самайна": {
+			"sprites": {
+				"normal": "res://sprites/characters/samaina/samaina.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Лила": {
+			"sprites": {
+				"normal": "res://sprites/characters/lila/lila.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Пастух": {
+			"sprites": {
+				"normal": "res://sprites/characters/pastuh/pastuh.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Барашка 1": {
+			"sprites": {
+				"normal": "res://sprites/characters/sheep/sheep_1.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		},
+		"Барашка 2": {
+			"sprites": {
+				"normal": "res://sprites/characters/sheep/sheep_2.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		}
+	},
+	"backgrounds": {
+		"Holidays": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Holidaes.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		},
+		"Lily's House": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Lilys_house.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		},
+		"Night Village": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Night_derevnya.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		},
+		"Rock memories": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Rock_memories.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		},
+		"Trikie's House": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Trikie_house.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		},
+		"Trikies's room": {
+			"sprites": {
+				"default": "res://sprites/backgrounds/Trikie_room.png"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0.0,
+				"stretch_mode": 0.0
+			}
+		}
+	},
+	"phrases": [
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Доброе утро, сынок. Давай, просыпайся сегодня важный день. День твоего самостоятельного проведения ритуала.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"size_x": 360.0,
+				"size_y": 760.0
+			},
+			"next": 1.0,
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Доброе утро, мам..",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"size_x": 340.0,
+				"size_y": 800.0
+			},
+			"next": 2.0,
+			"transform": {
+				"position_x": 280.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Трики я пойду за цветами для ритуала. Завтрак на столе. Люблю тебя, бонито.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 780.0,
+				"position_y": 0.0,
+				"size_x": 360.0,
+				"size_y": 780.0
+			},
+			"next": 3.0,
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Кто там?\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 1200.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"next": 4.0,
+			"transform": {
+				"position_x": 280.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Не переживай, это мы! Марта и Марен!\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 1600.0,
+				"position_y": 0.0,
+				"size_x": 360.0,
+				"size_y": 780.0
+			},
+			"next": 5.0,
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Если это были бы не мы, а другой, то навряд ли бы стучались.. Камень бы летел через стекло.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 2000.0,
+				"position_y": 0.0,
+				"size_x": 340.0,
+				"size_y": 800.0
+			},
+			"next": 6.0,
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Марен!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 2400.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 740.0
+			},
+			"next": 7.0,
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "А что? Я что-то сказал неправильное?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 2800.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 720.0
+			},
+			"next": 8.0,
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ладно, давайте заходите, пока никого рядом на улице нет.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 3200.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 740.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 9.0
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Как вы?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 3600.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 739.999938964844
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 10.0
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Хотя бы на подготовку маме дали спокойно выйти. Она ещё сказала вчера, что я достиг того возраста, чтобы провести такой важный ритуал.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 4000.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 11.0
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ого, теперь как я станешь.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 4400.0,
+				"position_y": 0.0,
+				"size_x": 320.0,
+				"size_y": 720.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 12.0
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Хех, а мне не нужно ничего делать.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 4900.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 13.0
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Да, что уж всего раз в какое-то время что-то нужно там сказать и сделать. Хоть какое-то разнообразие в нашей жизни, в особенности в наше время. Когда нас не столь и любят.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 5300.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 860.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 14.0
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ну в чем-то ты и прав..",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 5700.0,
+				"position_y": 0.0,
+				"size_x": 320.0,
+				"size_y": 760.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 15.0
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "... Ладно хоть мы и будем жить больше, чем остальные,  но давайте в такой день не будем об этом вспоминать.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 6100.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 16.0
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Да, ведь и в правду. Мне нужно готовиться к проведению.. Но я не очень уверен в том, что смогу.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 6500.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 17.0
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Так, ты же в другие годы помогал маме. Трик, ты наблюдал за таким кучу раз.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 6900.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 18.0
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Давай, не унывай. Может, если сильно сомневаешься, скажешь маме об этом.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 7300.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 19
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Трики-и-и!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 7700.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 20
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Трики-и-и-и!!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 8100.0,
+				"position_y": 0.0,
+				"size_x": 320.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 300.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 21
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "ТРИКИ-И-И!!!!!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 8500.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 22
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "А? Что?...",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 8900.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 700.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 23
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ты опять в своих мыслях закрылся?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 9300.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 740.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 24
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Вновь избегает реальности больше.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 9700.0,
+				"position_y": 0.0,
+				"size_x": 320.0,
+				"size_y": 760.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 25
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ну, хватит, Марен! Сам видишь, как Трики переживает! Хотя б сейчас лучше поддержи его.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 10100.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 760.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 26
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Я разбавляю обстановку глупыми шутками, как и обычно, Март.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 10500.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 760.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 27
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Многие твои шуточки довольно обидны, признай! Это как на прошлой недели, когда ты \"пошутил\" над Весной, тебе бежать пришлось, забыл?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 10900.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 28
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Было дело, и че?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 11300.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 600.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 29
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Дети!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 11700.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 700.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 30
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Марен, Марта, можете пойти во двор с корзинкой. Она около двери.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 12100.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 860.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 31
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Хорошо, тетя Самайна.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 12500.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 32
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Что такое, Трики? Что тревожит мою красивую свечку?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 12900.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 740.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 33
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Мам.... Я очень боюсь..",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 13300.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 34
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Проводить ритуал? \n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 13700.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 35
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Трики, если ты не хочешь проводить скажи сейчас. Всё хорошо, сынок.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 14100.0,
+				"position_y": 0.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 36
+		},
+		{
+			"type": "choice",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "",
+			"choices": {
+				"Согласиться проводить ритуал": 37,
+				"Отказаться": 38
+			},
+			"editor_transform": {
+				"position_x": 14480.0,
+				"position_y": 0.0,
+				"size_x": 380.0,
+				"size_y": 838.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Я проведу сам ритуал, мам. Но только будь начеку рядом, хорошо? Идем, твои друзья уже заждались нас около дома.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 14980.0,
+				"position_y": -420.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 39
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Можно я тебе помогу, как в прошлые разы. Я не думаю, что хорошо подготовлен к такому важному ритуалу.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 15000.0,
+				"position_y": 480.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 41
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Конечно, цветочек. Первая практика всегда должна быть под контролем. Не переживай.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 15380.0,
+				"position_y": -420.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 40
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Давай выходить, а то твои друзья заждались уже.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 15800.0,
+				"position_y": -420.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			}
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Все нормально, не стоит бояться.\n",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 15380.0,
+				"position_y": 480.0,
+				"size_x": 340.0,
+				"size_y": 799.999938964844
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 42
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikies's room",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Идем, твои друзья уже заждались нас около дома.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 15800.0,
+				"position_y": 500.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "О, ура вы вышли!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 16520.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Да, неужели. Нам стоит торопиться. Вам же ещё подготавливать место для ритуала.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 16980.0,
+				"position_y": -340.0,
+				"size_x": 320.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ты прав, Марен, идемте, если что поможете Трики.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 17400.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Без проблем.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 17800.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 18200.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Holidays",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 18600.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 0.0,
+				"position_y": 0.0,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			}
+		}
+	]
+}
