@@ -139,6 +139,7 @@ func handle_phrase() -> bool:
 	is_busy = true
 	while not text.visible_characters >= len(phrase.text):
 		text.visible_characters += 1
+		foreground_stream.pitch_scale = randf_range(1, 1.25)
 		foreground_stream.play()
 		if is_busy:
 			await get_tree().create_timer(current_text_speed).timeout

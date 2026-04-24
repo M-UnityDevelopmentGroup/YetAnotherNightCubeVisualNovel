@@ -9,7 +9,7 @@
 				"main": "6464FF"
 			},
 			"sounds": {
-				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+				"default": "res://sounds/Boris.wav"
 			}
 		},
 		"Марен": {
@@ -21,7 +21,7 @@
 				"main": "6464FF"
 			},
 			"sounds": {
-				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+				"default": "res://sounds/Man.wav"
 			}
 		},
 		"Марта": {
@@ -33,7 +33,7 @@
 				"main": "6464FF"
 			},
 			"sounds": {
-				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+				"default": "res://sounds/Liren.wav"
 			}
 		},
 		"Самайна": {
@@ -44,7 +44,7 @@
 				"main": "6464FF"
 			},
 			"sounds": {
-				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+				"default": "res://sounds/Clancy.wav"
 			}
 		},
 		"Лила": {
@@ -677,7 +677,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 19
+			"next": 19.0
 		},
 		{
 			"type": "text",
@@ -703,7 +703,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 20
+			"next": 20.0
 		},
 		{
 			"type": "text",
@@ -729,7 +729,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 21
+			"next": 21.0
 		},
 		{
 			"type": "text",
@@ -755,7 +755,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 22
+			"next": 22.0
 		},
 		{
 			"type": "text",
@@ -781,7 +781,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 23
+			"next": 23.0
 		},
 		{
 			"type": "text",
@@ -807,7 +807,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 24
+			"next": 24.0
 		},
 		{
 			"type": "text",
@@ -833,7 +833,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 25
+			"next": 25.0
 		},
 		{
 			"type": "text",
@@ -859,7 +859,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 26
+			"next": 26.0
 		},
 		{
 			"type": "text",
@@ -885,7 +885,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 27
+			"next": 27.0
 		},
 		{
 			"type": "text",
@@ -911,7 +911,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 28
+			"next": 28.0
 		},
 		{
 			"type": "text",
@@ -937,7 +937,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 29
+			"next": 29.0
 		},
 		{
 			"type": "text",
@@ -963,7 +963,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 30
+			"next": 30.0
 		},
 		{
 			"type": "text",
@@ -989,7 +989,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 31
+			"next": 31.0
 		},
 		{
 			"type": "text",
@@ -1015,7 +1015,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 32
+			"next": 32.0
 		},
 		{
 			"type": "text",
@@ -1041,7 +1041,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 33
+			"next": 33.0
 		},
 		{
 			"type": "text",
@@ -1067,7 +1067,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 34
+			"next": 34.0
 		},
 		{
 			"type": "text",
@@ -1093,7 +1093,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 35
+			"next": 35.0
 		},
 		{
 			"type": "text",
@@ -1119,7 +1119,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 36
+			"next": 36.0
 		},
 		{
 			"type": "choice",
@@ -1131,8 +1131,8 @@
 			"background_sound": "default",
 			"text": "",
 			"choices": {
-				"Согласиться проводить ритуал": 37,
-				"Отказаться": 38
+				"Согласиться проводить ритуал": 37.0,
+				"Отказаться": 38.0
 			},
 			"editor_transform": {
 				"position_x": 14480.0,
@@ -1171,7 +1171,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 39
+			"next": 39.0
 		},
 		{
 			"type": "text",
@@ -1197,7 +1197,7 @@
 				"scale_x": 0.4,
 				"scale_y": 0.4
 			},
-			"next": 41
+			"next": 41.0
 		},
 		{
 			"type": "text",
@@ -1223,7 +1223,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 40
+			"next": 40.0
 		},
 		{
 			"type": "text",
@@ -1248,7 +1248,8 @@
 				"position_y": 0.0,
 				"scale_x": 0.5,
 				"scale_y": 0.5
-			}
+			},
+			"next": 43
 		},
 		{
 			"type": "text",
@@ -1274,7 +1275,7 @@
 				"scale_x": 0.5,
 				"scale_y": 0.5
 			},
-			"next": 42
+			"next": 42.0
 		},
 		{
 			"type": "text",
@@ -1299,7 +1300,8 @@
 				"position_y": 0.0,
 				"scale_x": 0.4,
 				"scale_y": 0.4
-			}
+			},
+			"next": 49
 		},
 		{
 			"type": "text",
@@ -1324,7 +1326,8 @@
 				"position_y": 0.0,
 				"scale_x": 0.4,
 				"scale_y": 0.4
-			}
+			},
+			"next": 44
 		},
 		{
 			"type": "text",
@@ -1349,7 +1352,8 @@
 				"position_y": 0.0,
 				"scale_x": 0.4,
 				"scale_y": 0.4
-			}
+			},
+			"next": 45
 		},
 		{
 			"type": "text",
@@ -1374,7 +1378,8 @@
 				"position_y": 0.0,
 				"scale_x": 0.4,
 				"scale_y": 0.4
-			}
+			},
+			"next": 46
 		},
 		{
 			"type": "text",
@@ -1399,17 +1404,18 @@
 				"position_y": 0.0,
 				"scale_x": 0.4,
 				"scale_y": 0.4
-			}
+			},
+			"next": 47
 		},
 		{
 			"type": "text",
-			"name": "Трики",
+			"name": "Самайна",
 			"sprite": "normal",
 			"sound": "default",
-			"background": "Trikie's House",
+			"background": "Rock memories",
 			"background_type": "default",
 			"background_sound": "default",
-			"text": "",
+			"text": "Что ж, дети, давайте тогда вы украшаете, я с Трики приготовимся к ритуалу.",
 			"choices": {
 
 			},
@@ -1420,21 +1426,22 @@
 				"size_y": 820.0
 			},
 			"transform": {
-				"position_x": 0.0,
+				"position_x": 320.0,
 				"position_y": 0.0,
-				"scale_x": 1.0,
-				"scale_y": 1.0
-			}
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 48
 		},
 		{
 			"type": "text",
-			"name": "Трики",
+			"name": "Марен",
 			"sprite": "normal",
 			"sound": "default",
-			"background": "Holidays",
+			"background": "Rock memories",
 			"background_type": "default",
 			"background_sound": "default",
-			"text": "",
+			"text": "Окей!",
 			"choices": {
 
 			},
@@ -1445,10 +1452,425 @@
 				"size_y": 820.0
 			},
 			"transform": {
-				"position_x": 0.0,
+				"position_x": 200.0,
 				"position_y": 0.0,
-				"scale_x": 1.0,
-				"scale_y": 1.0
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 55
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "О, ура вы вышли!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 16520.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 50
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Да, неужели. Нам стоит торопиться. Вам же ещё подготавливать место для ритуала.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 16980.0,
+				"position_y": 840.0,
+				"size_x": 320.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 51
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ты прав, Марен, идемте, если что поможете Трики.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 17400.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 52
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Trikie's House",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Без проблем.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 17800.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 53
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Что ж, дети, давайте тогда вы украшаете, я с Трики приготовимся к ритуалу.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 18200.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 54
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Окей!",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 18600.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 60
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Хэй, ты чего? Твоя мама будет рядом и мы тоже. Не нервничай, Трики.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19000.0,
+				"position_y": -340.0,
+				"size_x": 320.0,
+				"size_y": 860.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 56
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Марта права, сам не поймешь, так ритуал закончится, не кипешуй.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19400.0,
+				"position_y": -340.0,
+				"size_x": 320.0,
+				"size_y": 860.0
+			},
+			"transform": {
+				"position_x": 400.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 57
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Я знаю, я понимаю, но все же это очень большая ответственность и я даже не могу представить, что может случиться в противном случае.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19880.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 58
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Если что-то и произойдет, я смогу все исправить. И давай твой час настал.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 20280.0,
+				"position_y": -340.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 480.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 59
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Ч-что!?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 20680.0,
+				"position_y": -340.0,
+				"size_x": 320.0,
+				"size_y": 780.0
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			}
+		},
+		{
+			"type": "text",
+			"name": "Трики",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Все готово, мам.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19000.0,
+				"position_y": 840.0,
+				"size_x": 320.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 200.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 61
+		},
+		{
+			"type": "text",
+			"name": "Марен",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "У нас тоже.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19360.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 840.0
+			},
+			"transform": {
+				"position_x": 300.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 62
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Что-то еще нужно, тетя Самайна?",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 19720.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 820.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
+			},
+			"next": 63
+		},
+		{
+			"type": "text",
+			"name": "Самайна",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Нет, все готово.",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 20100.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 819.999938964844
+			},
+			"transform": {
+				"position_x": 320.0,
+				"position_y": 0.0,
+				"scale_x": 0.5,
+				"scale_y": 0.5
+			},
+			"next": 64
+		},
+		{
+			"type": "text",
+			"name": "Марта",
+			"sprite": "normal",
+			"sound": "default",
+			"background": "Rock memories",
+			"background_type": "default",
+			"background_sound": "default",
+			"text": "Что происходит?!!....",
+			"choices": {
+
+			},
+			"editor_transform": {
+				"position_x": 20480.0,
+				"position_y": 840.0,
+				"size_x": 300.0,
+				"size_y": 800.0
+			},
+			"transform": {
+				"position_x": 640.0,
+				"position_y": 0.0,
+				"scale_x": 0.4,
+				"scale_y": 0.4
 			}
 		}
 	]

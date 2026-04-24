@@ -1,0 +1,33 @@
+{
+	"characters": {
+		"default": {
+			"sprites": {
+				"default": "res://addons/mvnf/sprites/fallback/icon.svg"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.wav"
+			}
+		}
+	},
+	"backgrounds": {
+		"default": {
+			"sprites": {
+				"default": "res://addons/mvnf/sprites/fallback/icon.svg"
+			},
+			"colors": {
+				"main": "6464FF"
+			},
+			"sounds": {
+				"default": "res://addons/mvnf/sounds/fallback/default.mp3"
+			},
+			"settings": {
+				"expand_mode": 0,
+				"stretch_mode": 0
+			}
+		}
+	},
+	"phrases": []
+}

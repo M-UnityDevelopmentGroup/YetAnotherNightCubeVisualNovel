@@ -208,7 +208,8 @@ mouse_filter = 2
 alignment = 1
 
 [node name="Foreground" type="AudioStreamPlayer" parent="." unique_id=1866255598]
-volume_db = -4.0
+volume_db = -6.0
 
 [node name="Background" type="AudioStreamPlayer" parent="Foreground" unique_id=508687329]
 volume_db = -16.0
+pitch_scale = 0.75
